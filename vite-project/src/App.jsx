@@ -1,14 +1,16 @@
-import { useState } from 'react'
+import {useState} from "react";
+import FormPanel from "./components/FormComponent/FormPanel";
+import CVPreview from "./components/CVComponent/CVPreview";
+import { createInitialCV} from "./data/initialCV";
+import "./App.css";
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+function App () {
   return (
-    <>
-      
-    </>
-  )
+    <div className="app-container">
+      <FormPanel />
+      <CVPreview />
+    </div>
+  );
 }
 
-export default App
+export default App;
